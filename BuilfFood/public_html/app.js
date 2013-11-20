@@ -1,7 +1,7 @@
 /* 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
- *ipena
+ *ipena - gizmo dale ON a tus ideas!!
  */
         
 var offerApp = angular.module('offerApp', [
