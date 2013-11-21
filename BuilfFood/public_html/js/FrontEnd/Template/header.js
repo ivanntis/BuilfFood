@@ -8,21 +8,26 @@
 document.write(
               "<nav id='navigateBarBF'>"+                   
                "<img id='navLogoImgBF' src='img/imgGoogleGizmo.png'/>"+
+               
                 "<div id='barLoginBF'>"+
-                    "<ul class='menuHorizontalBF'>"+
+                    "<ul class='menuHorizontalBF'>"+                       
                         "<li class='itemMenuHorizontalBF'>"+
-                            "<img id='navLogoLinkedIn' class='imageSocial' src='img/SingOut.png'/>"+                                                       
+                            "<img id='navLogoSingout' class='imageSocial' src='img/SingOut.png'/>"+                                                       
                             "<span id='loginLinkedIn'>Salir</span>"+  
                         "</li>"+                                                     
                         "<li class='itemMenuHorizontalBF'>"+
-                            "<img id='navLogoTwitter' class='imageSocial' src='img/profile.jpeg'/>"+    
+                            "<img id='navLogoProfile' class='imageSocial' src='img/profile.jpeg'/>"+    
                             "<span id='loginTwitter'>Perfil</span>"+  
                         "</li>"+
                         "<li class='itemMenuHorizontalBF'>"+
-                             "<img id='navLogoFacebook' class='imageSocial' src='img/search.png'/>"+    
-                            "<span id='loginFacebook'>Buscar</span>"+
+                             "<img id='navLogoFindFood' class='imageSocial' src='img/food-plate-icon.jpg'/>"+    
+                            "<span id='loginFacebook'>Antojo</span>"+
                         "</li>"+                         
                     "</ul>"+
+                "</div>"+
+                "<div id='findAllDiv'>"+
+                "<input id='findAll' type='text' placeholder='Buscar...'/> "+
+                "<input id='buttonFind' type=image src='img/search.png' >"+
                 "</div>"+
             "</nav>"
             );
