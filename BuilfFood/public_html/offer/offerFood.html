@@ -14,8 +14,7 @@
       <link rel="stylesheet" type="text/css" href="../css/panelSeriesCSS.css">
     </head>
     <body ng-controller="offerListCtrl">
-        <img alt="a"  src="../img/offerIMG/DonGato.jpg" />
-        <section>        
+       <section>        
             <div class="contenedor">
             <div id="panelItemOffer" class="panelSeriesClass"  ng-repeat="offer in offers">
                   <div id="titleOffer" class="panelTittleClass">
@@ -24,7 +23,7 @@
                       </span>
                   </div>
                <div id="contenctOffer" class="panelContectClass">
-                   <img alt="{{offer.id}}" id="imageOffer" src="{{offer.img}}"/>
+                <!--   <img alt="{{offer.id}}" id="imageOffer" src="{{offer.img}}"/>-->
                      <div id="descriptionOffer">
                          <p id="TextAreaDescription">
                               {{offer.desc}}

@@ -12,3 +12,16 @@ offerControllers.controller('offerListCtrl',['$scope','Offer',  function ($scope
 
 }]);
 
+//var offerControllers = angular.module('offerControllers', ['ngResource']);
+// 
+//offerControllers.controller('offerListCtrl', ['$scope', function ($scope) {
+//$scope.offers = [
+//    {'id': 'Nexus S',
+//     'desc': 'Fast just got faster with Nexus S.'},
+//    {'id': 'Motorola XOOM™ with Wi-Fi',
+//     'desc': 'The Next, Next Generation tablet.'},
+//    {'id': 'MOTOROLA XOOM™',
+//     'desc': 'The Next, Next Generation tablet.'}
+//  ];
+//  console.log("controller");
+//}]);
