@@ -6,7 +6,8 @@
 var offerApp = angular.module('offerApp', [
   'ngRoute',
   'offerControllers',
-  'offerServices'
+  'offerServices',
+  'ngResource'
 ]);
 
 offerApp
