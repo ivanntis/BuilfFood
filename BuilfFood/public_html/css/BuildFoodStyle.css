@@ -30,7 +30,7 @@ nav{
 footer{
     color: #fff;    
     min-width: 700px;
-    margin-left: 22%;
+    margin-left: 20%;
     margin-top: 0%;
 
 }
@@ -191,4 +191,11 @@ form{
     
 }
             
-            
+#nameCustomer{
+    color:#7D57A6;
+    font-family: serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px;
+}            
+

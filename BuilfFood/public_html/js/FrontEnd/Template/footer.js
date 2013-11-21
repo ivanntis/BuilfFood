@@ -9,17 +9,20 @@ document.write(
                 "<div id='barLoginBF'>"+
                     "<ul class='footHorizontalBF'>"+                         
                         "<li class='itemFootHorizontalBF'>"+
-                            "<a id='loginLinkedIn'>Tus ideas con Nosotros</a>"+  
+                            "<a id='loginTrabajo'>Tus ideas con Nosotros</a>"+  
                         "</li>"+                                                     
                         "<li class='itemFootHorizontalBF'>"+
-                            "<a id='loginTwitter'>Nuestras Ideas</a>"+  
-                        "</li>"+
+                            "<a id='loginNostros'>Nuestras Ideas</a>"+  
+                        "</li>"+                             
                         "<li class='itemFootHorizontalBF'>"+
-                            "<a id='loginFacebook'>Buscar</a>"+
-                        "</li>"+        
+                            "<a id='loginMarca'><span id='nameCustomer'>Gizmo dale ON a tus ideas!!!</span></a>"+  
+                        "</li>"+  
                         "<li class='itemFootHorizontalBF'>"+
-                            "<a id='loginLinkedIn'><span id='nameCustomer'>Gizmo dale ON a tus ideas!!!</span>Derechos Reservados - 2013</a>"+  
-                        "</li>"+                        
+                            "<a id='copyBF'>Publicidad</a>"+  
+                        "</li>"+ 
+                        "<li class='itemFootHorizontalBF'>"+
+                            "<a id='copyBF'>Privacidad y Condiciones</a>"+  
+                        "</li>"+ 
                     "</ul>"+                    
                                             
                 "</div>"+
