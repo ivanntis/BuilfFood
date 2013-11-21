@@ -8,7 +8,6 @@
 document.write(
               "<nav id='navigateBarBF'>"+                   
                "<img id='navLogoImgBF' src='img/imgGoogleGizmo.png'/>"+
-               
                 "<div id='barLoginBF'>"+
                     "<ul class='menuHorizontalBF'>"+                       
                         "<li class='itemMenuHorizontalBF'>"+
