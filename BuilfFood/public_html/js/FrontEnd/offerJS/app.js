@@ -6,24 +6,18 @@
 var offerApp = angular.module('offerApp', [
   'ngRoute',
   'offerControllers',
-  'offerServices',
-  'ngResource'
+  'offerServices'
 ]);
 
-offerApp
-.config(['$httpProvider',function ($httpProvider) {
-    $httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
- }]) 
- .config(['$routeProvider',
+offerApp.config(['$routeProvider',
   function($routeProvider) {
             console.log("$routeProvider");
     $routeProvider.
-      when('/offerFood', {
-        templateUrl: '/offer/offerFood.html',
+      when('/wsLunch/offer', {
+        templateUrl: 'wsLunch/offer/offerFood.html',
         controller: 'offerListCtrl'
       }).
       otherwise({
-        redirectTo: '/offer/offerFood'
+        redirectTo: 'wsLunch/offer/offerFood'
       });
   }]);

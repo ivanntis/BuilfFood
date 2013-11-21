@@ -21,12 +21,16 @@ var NodeDataBaseBF =require('./NodeDataBaseBF');
 var app = connect()
   .use(connect.logger('dev'))
   .use(connect.static('/Users/ivanricardopenasierra/NetBeansProjects/BuilfFood/BuilfFood/public_html'))
-  .use(function(req, res){
+  .use(function(req, res,next){
       NodeDataBaseBF.setDataBase("mysql");
       NodeDataBaseBF.getDataQuery("SELECT * FROM test.CONTRY",function(result){  
          console.log(result[0].CONTRY_NAME);
       });
     //res.end('hello world\n');
+     res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
   })
  .listen(3080);
 console.log('Server running at http://127.0.0.1:3080/');

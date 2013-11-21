@@ -3,12 +3,13 @@
  * and open the template in the editor.
  */
 
-var offerControllers = angular.module('offerControllers', ['ngResource','offerServices']);
+var offerControllers = angular.module('offerControllers', ['ngResource']);
  
-offerControllers.controller('offerListCtrl',['$scope','Offer',  function ($scope,Offer) {
-    console.log("Offer.controller");
-    $scope.offers = Offer.query();
-     console.log(Offer.query());
+offerControllers.controller('offerListCtrl',['$scope','offerServices',  function ($scope,offerServices) {
+    
+    $scope.offers = offerServices.query();
+    console.log($scope.offers);
+    
 
 }]);
 

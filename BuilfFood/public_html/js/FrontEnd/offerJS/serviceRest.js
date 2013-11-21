@@ -5,17 +5,11 @@
 
 
 var offerServices = angular.module('offerServices', ['ngResource']);
- 
- 
-offerServices.factory('Offer', ['$resource',function($resource){
-      //  console.log("Servicio1");
-         return $resource('http://localhost:3081/wsLunch/authentication/ivan/Ricardo', {}, {
-                    query: {method:'GET', params:{}, isArray:true}
-                   
-                });
-             //   console.log("Servicio");
-  }]);
-  
-  
+
+offerServices.factory('offerServices', function ($resource) {
+    return $resource('http://localhost:3081/wsLunch/authentication/ivan/offerId', {}, {
+        query: { method: 'GET', isArray: false }
+    });
+});
 
   
