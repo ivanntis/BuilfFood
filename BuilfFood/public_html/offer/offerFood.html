@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+
+<html ng-app="offerApp">
+    <head>
+      <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <script src="http://code.angularjs.org/1.2.0/angular.min.js"></script>
+      <script src="http://code.angularjs.org/1.2.0/angular-route.js"></script>
+       <script src="http://code.angularjs.org/1.2.0/angular-resource.js"></script>
+       <script src="../js/FrontEnd/offerJS/app.js"></script>
+       <script src="../js/FrontEnd/offerJS/serviceRest.js"></script>
+      <script src="../js/FrontEnd/offerJS/controller.js"></script>
+      <link rel="stylesheet" type="text/css" href="panelSeriesCSS.css">
+    </head>
+    <body ng-controller="offerListCtrl">
+        <img alt="a"  src="../img/offerIMG/DonGato.jpg" />
+        <section>        
+            <div class="contenedor">
+            <div id="panelItemOffer" class="panelSeriesClass"  ng-repeat="offer in offers">
+                  <div id="titleOffer" class="panelTittleClass">
+                      <span>
+                          {{offer.id}}
+                      </span>
+                  </div>
+               <div id="contenctOffer" class="panelContectClass">
+                   <img alt="{{offer.id}}" id="imageOffer" src="{{offer.img}}"/>
+                     <div id="descriptionOffer">
+                         <p id="TextAreaDescription">
+                              {{offer.desc}}
+                         </p>
+                      </div>
+              </div> 
+                </div>      
+        </div>
+          </section>
+    </body>
+ </html>
