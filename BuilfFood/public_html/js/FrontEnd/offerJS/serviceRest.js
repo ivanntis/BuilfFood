@@ -7,8 +7,8 @@
 var offerServices = angular.module('offerServices', ['ngResource']);
 
 offerServices.factory('offerServices', function ($resource) {
-    return $resource('http://localhost:3081/wsLunch/authentication/ivan/offerId', {}, {
-        query: { method: 'GET', isArray: false }
+    return $resource('http://localhost:3081/wsLunch/authentication/ivan/DonGato.jpg', {}, {
+        query: { method: 'GET', isArray: true }
     });
 });
 
