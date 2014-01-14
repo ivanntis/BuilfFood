@@ -13,11 +13,11 @@ offerApp.config(['$routeProvider',
   function($routeProvider) {
             console.log("$routeProvider");
     $routeProvider.
-      when('/wsLunch/offer', {
-        templateUrl: 'wsLunch/offer/offerFood.html',
+      when('/offer', {
+        templateUrl: 'offer/offerFood.html',
         controller: 'offerListCtrl'
       }).
       otherwise({
-        redirectTo: 'wsLunch/offer/offerFood'
+        redirectTo: 'offer/offerFood'
       });
   }]);
