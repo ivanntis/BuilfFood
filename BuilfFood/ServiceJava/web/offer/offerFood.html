@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="offerApp">
+    <head>
+      <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <script src="http://code.angularjs.org/1.2.0/angular.min.js"></script>
+      <script src="http://code.angularjs.org/1.2.0/angular-route.js"></script>
+       <script src="http://code.angularjs.org/1.2.0/angular-resource.js"></script>
+       <script src="../js/FrontEnd/offerJS/serviceRest.js"></script> 
+      <script src="../js/FrontEnd/offerJS/controller.js"></script>
+       <script src="../js/FrontEnd/offerJS/app.js"></script>
+      
+      <link rel="stylesheet" type="text/css" href="../css/panelSeriesCSS.css">
+    </head>
+    <body ng-controller="offerListCtrl">
+       <section>        
+            <div class="contenedor">
+            <div id="panelItemOffer" class="panelSeriesClass"" >
+                  <div id="titleOffer" class="panelTittleClass">
+                      <span>
+                         {{offers.firstName}}
+                      </span>
+                  </div>
+               <div id="contenctOffer" class="panelContectClass">
+                <!--   <img alt="{{offer.id}}" id="imageOffer" src="{{offer.img}}"/>-->
+                     <div id="descriptionOffer">
+                         <p id="TextAreaDescription">
+                             {{offers.email}}
+                         </p>
+                      </div>
+              </div> 
+                </div>      
+        </div>
+          </section>
+    </body>
+ </html>
